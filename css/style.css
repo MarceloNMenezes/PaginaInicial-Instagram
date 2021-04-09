@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height:100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-pai{
+    display: flex; /* é um flex container, signfica que todos itens estão dentro deles é alinhado em linha */
+    align-items: center; /* alinhamento vertical dos nosso itens, no eixo Y ele vai ficar no centro.*/
+    justify-content: start; /* alinhamento vertical dos nosso itens, no eixo X ele vai ficar no centro.*/
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    }
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.intagram-continue{
+    display: flex;
+    align-items: center;/*horizontal */
+    justify-content: space-around; /*vertical devido  justify-content*/
+    flex-direction: column;
+    width: 50%;
+    min-height:  34rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* pra imagem nao exceder o tamanho da div pra fora.*/
+
+}
+
+.profile-foto img{
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+    .not-account{
+        color: rgb(160,160, 160);
+     }
+
+     .link-blue{
+         color: #0095f6;
+     }
+
+     .get-the-app{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.3rem 0;
+     }
+
+     .download{
+         display: flex;
+         width: 100%;
+         justify-content: space-evenly; /* propriedade que deixa os mesmos espaços ao lado que no meio entre os objetos, exatamente no centro */
+         align-items: center;
+         padding: 1rem;
+     }
+
+     .app-download{
+         height: 3rem;
+         width: 10rem;
+         background-size:cover;
+     }
+
+     .app-download:nth-child(1){
+         background-image: url(../img/apple-button.png);
+     }
+
+     .app-download:nth-child(2){
+        background-image: url(../img/googleplay-button.png);
+    }
+
+    /* CRIAR RESPONSIVIDADE - MEDIA QUERIES PARA TABLET E CELULAR */
+
+    @media (max-width:1024px){
+        .container-pai{
+            width: 90%;
+        }
+    }
+
+    @media (max-width:650px){
+        
+        .body{
+            background-color: #ffffff;
+        }
+        .container-pai{
+            width: 90%;
+        }
+
+        .instagram-phone{
+            display: none;
+        }
+    
+        .intagram-continue{
+            width: 100%;
+        }
+
+        .group{
+            border: 1px solid transparent;
+        }
+    }
+
+   
